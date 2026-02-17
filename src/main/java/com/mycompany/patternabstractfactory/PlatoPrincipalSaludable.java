@@ -8,6 +8,10 @@ package com.mycompany.patternabstractfactory;
  *
  * @author sangr
  */
-public class PlatoPrincipalSaludable {
-    
+public class PlatoPrincipalSaludable implements IPlatoPrincipal {
+    private String descripcion = "Sirviendo... Plato principal saludable";
+
+    public String getDescripcion() {
+        return descripcion;
+    }
 }

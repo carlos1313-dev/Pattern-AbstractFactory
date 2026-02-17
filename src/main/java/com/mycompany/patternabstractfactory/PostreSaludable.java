@@ -8,6 +8,10 @@ package com.mycompany.patternabstractfactory;
  *
  * @author sangr
  */
-public class PostreSaludable {
-    
+public class PostreSaludable implements IPostre {
+    private String descripcion = "Sirviendo... Postre saludable";
+
+    public String getDescripcion() {
+        return descripcion;
+    }
 }

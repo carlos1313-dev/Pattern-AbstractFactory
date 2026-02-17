@@ -8,6 +8,21 @@ package com.mycompany.patternabstractfactory;
  *
  * @author sangr
  */
-public class MenuVegetarianoFactory {
-    
+public class MenuVegetarianoFactory implements IMenuFactory {
+
+    public IEntrada crearEntrada() {
+        return new EntradaVegetariana();
+    }
+
+    public IPlatoPrincipal crearPlatoPrincipal() {
+        return new PlatoPrincipalVegetariano();
+    }
+
+    public IBebida crearBebida() {
+        return new BebidaVegetariana();
+    }
+
+    public IPostre crearPostre() {
+        return new PostreVegetariano();
+    }
 }

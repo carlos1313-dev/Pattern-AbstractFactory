@@ -9,5 +9,9 @@ package com.mycompany.patternabstractfactory;
  * @author sangr
  */
 public interface IMenuFactory {
-    
+    IEntrada crearEntrada();
+    IPlatoPrincipal crearPlatoPrincipal();
+    IBebida crearBebida();
+    IPostre crearPostre();
 }
+

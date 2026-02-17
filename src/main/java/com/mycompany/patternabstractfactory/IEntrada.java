@@ -9,5 +9,5 @@ package com.mycompany.patternabstractfactory;
  * @author sangr
  */
 public interface IEntrada {
-    
+    String getDescripcion();
 }

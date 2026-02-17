@@ -8,6 +8,11 @@ package com.mycompany.patternabstractfactory;
  *
  * @author sangr
  */
-public class EntradaSaludable {
-    
+public class EntradaSaludable implements IEntrada {
+    private String descripcion = "Sirviendo... Entrada saludable";
+
+    public String getDescripcion() {
+        return descripcion;
+    }
 }
+
